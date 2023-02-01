@@ -3,7 +3,7 @@ import os
 print(os.getcwd())
 os.chdir(r"C:\Users\Name\Downloads")
 
-os.chdir(r"C:\Users\Bruno\Downloads")
+os.chdir(r"C:\Users\Name\Downloads")
 lista_arquivos = [arquivo.lower() for arquivo in os.listdir() if os.path.isfile(arquivo )]
 lista_tipos = {tipo.split(".")[-1] for tipo in lista_arquivos}
 
