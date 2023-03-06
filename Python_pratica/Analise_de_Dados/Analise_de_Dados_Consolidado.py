@@ -28,3 +28,25 @@ print()
 
 # Verificando a quantidade de linhas e colunas do dataframe
 print(df.shape)
+# Acessando colunas individualmente
+print(df['Segmento'])
+
+# >> Alterando o nome das colunas
+colunas = ['Segmento', 'País', 'Produto', 'Qtde de Unidades Vendidas',
+       'Preço Unitário', 'Valor Total', 'Desconto', 'Valor Total c/ Desconto',
+       'Custo Total', 'Lucro', 'Data', 'Mês', 'Ano']
+
+print()
+
+# >>> Mudando o nome das colunas para letras minusculas
+for nome in range(len(colunas)):
+    colunas[nome] = colunas[nome].lower()
+    #print(colunas)
+
+print(colunas)
+
+print()
+
+colunas_final = ['segmento', 'país', 'produto', 'unidades vendidas', 'preço unitário', 'valor total', 'desconto', 'valor total c/ desconto', 'custo total', 'lucro', 'data', 'mês', 'ano']
+df.columns = colunas_final
+print(df.columns)
